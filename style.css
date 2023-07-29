@@ -171,7 +171,7 @@ form > h2 {
 .inputs {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 label {
@@ -190,6 +190,7 @@ input:focus,
 input:active {
     outline: none;
     border: 1px solid blue;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 #footer {
@@ -219,4 +220,10 @@ input:active {
 
 .invalid {
     border: 1px solid red;
+}
+
+.error-msg {
+    color: red;
+    font-style: italic;
+    min-height: 1rem;
 }

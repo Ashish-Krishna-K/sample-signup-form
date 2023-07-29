@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Sign-Up</title>
 </head>
 
@@ -39,41 +41,36 @@
                     <div class="inputs">
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" name="first-name" id="first-name">
-                        <span class="error-msg"></span>
                     </div>
 
                     <div class="inputs">
                         <label for="last-name">LAST NAME</label>
                         <input type="text" name="last-name" id="last-name">
-                        <span class="error-msg"></span>
                     </div>
                 </div>
                 <div class="input-rows">
                     <div class="inputs">
                         <label for="email">EMAIL</label>
                         <input type="email" name="email" id="email">
-                        <span class="error-msg"></span>
                     </div>
 
                     <div class="inputs">
                         <label for="number">PHONE NUMBER</label>
                         <input type="tel" name="number" id="number">
-                        <span class="error-msg"></span>
                     </div>
                 </div>
                 <div class="input-rows">
                     <div class="inputs">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
-                        <span class="error-msg"></span>
+                        <input type="password" name="password" id="password" class="invalid">
                     </div>
 
                     <div class="inputs">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
-                        <span class="error-msg"></span>
+                        <input type="password" name="confirm-password" id="confirm-password" class="invalid">
                     </div>
                 </div>
+                <p class="error-msg">Passwords do not match.</p>
             </form>
             <div id="footer">
                 <button type="button">Create Account</button>
