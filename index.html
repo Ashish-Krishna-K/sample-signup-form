@@ -1,57 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <title>Sign-Up</title>
 </head>
+
 <body>
-    <section id="sidebar">
-        <div class="logo">ODIN</div>
-        <div class="credits"></div>
-    </section>
-    <section id="main">
-        <div id="hero">
-            <p>
-                This is not a real online service! You know you need something like this in your life to help 
-                you realize your deepest dreams. Sign up <em>now</em> to get started.
-            </p>
-            <p>
-                You <em>know</em> you want to.
-            </p>
-        </div>
-        <form action="#" id="sign-up">
-            <h2>Let's do this!</h2>
-            <div class="input-rows">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name" id="first-name">
-
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" id="last-name">
+    <main>
+        <section id="sidebar">
+            <div class="logo">
+                <img src="./images/odin-lined.png" alt="odin logo">
+                <h1>ODIN</h1>
             </div>
-            <div class="input-rows">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
-
-                <label for="number">PHONE NUMBER</label>
-                <input type="tel" name="number" id="number">
+            <div class="credits">
+                Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+                <a href="https://unsplash.com/">Unsplash</a>
             </div>
-            <div class="input-rows">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password">
-
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" id="confirm-password">
+        </section>
+        <section id="main">
+            <div id="hero">
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help
+                    you realize your deepest dreams. Sign up <em>now</em> to get started.
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
             </div>
-        </form>
-        <div id="footer">
-            <button type="button">Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </div>
-    </section>
-    <footer>
-        <p>Project by <a href="https://github.com/Ashish-Krishna-K">Ashish-Krishna-K</a></p>
-    </footer>
+            <form action="#" id="sign-up">
+                <h2>Let's do this!</h2>
+                <div class="input-rows">
+                    <div class="inputs">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                        <span class="error-msg"></span>
+                    </div>
+                </div>
+                <div class="input-rows">
+                    <div class="inputs">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" name="number" id="number">
+                        <span class="error-msg"></span>
+                    </div>
+                </div>
+                <div class="input-rows">
+                    <div class="inputs">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                        <span class="error-msg"></span>
+                    </div>
+                </div>
+            </form>
+            <div id="footer">
+                <button type="button">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </section>
 </body>
+
 </html>
